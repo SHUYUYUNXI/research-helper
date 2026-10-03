@@ -1,0 +1,35 @@
+联网找资料助手 (Research Helper, formerly ReachKit) includes code and documentation from Agent-Reach.
+Upstream: https://github.com/Panniantong/Agent-Reach
+Snapshot: a19a171fa980a0785849596492e0af4db800c82f (2026-09-16)
+Upstream version: 1.5.0
+Copyright (c) 2025 Agent Eyes
+License: MIT (see LICENSE)
+
+The upstream agent_reach package, platform guides, scripts, and tests are included.
+ReachKit 0.2 modifies agent_reach/cli.py (Xiaohongshu login verification)
+and agent_reach/transcribe.py (explicit cookie settings and child-process configuration).
+agent_reach/channels/xiaohongshu.py preserves signed source links and top-level
+note identifiers/tokens during result cleaning.
+ReachKit 0.2.1 adds a structured browser-cookie state in agent_reach/channels/boss.py
+and makes four tests in test_channels.py/test_reddit_channel.py skip explicitly
+when their environment cannot create real symbolic links.
+tests/conftest.py checks Windows token privileges and Developer Mode before
+running symbolic-link tests, preserving those tests on supported environments.
+The Xiaoyuzhou script verifies Python executables and accepts REACHKIT_PYTHON;
+its shell-test environment explicitly uses the test interpreter.
+ReachKit adds the reachkit package, integrated skill and references, tests_reachkit,
+launchers, maintenance documentation, and project packaging changes.
+ReachKit 0.2.2 narrows the compatibility skills' triggers and environment guidance,
+removes installation promotions, and routes update instructions to local ReachKit
+releases. Video references distinguish metadata, subtitles and transcription.
+Documentation tests target the documentation shipped with ReachKit.
+Upstream promotional assets, translations and internal design notes are omitted;
+the original project remains available at the upstream URL above.
+
+ReachKit additions: Copyright (c) 2026 ReachKit contributors.
+The additions are distributed under the same MIT license in LICENSE.
+
+Version 0.2.3 changes the product display name to 联网找资料助手.
+The ASCII package name, CLI and managed skill directory remain reachkit.
+
+Version 0.2.4 names the product 联网找资料助手 and updates its display names and repository URL.
