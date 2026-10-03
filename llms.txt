@@ -1,0 +1,9 @@
+# 联网找资料助手 0.2.4
+AI internet capability toolkit derived from Agent-Reach 1.5.0.
+Install from the supplied local source or wheel using Python 3.10+; install the skill with `reachkit skill --install`.
+Read reachkit/skill/SKILL.md and its task-specific references.
+Use capabilities to discover operations; doctor checks local readiness; doctor --upstream probes platform tools; doctor --live verifies public samples.
+Commands: read, search, research, collect, tool, install, configure, setup, transcribe, format, doctor, watch, check-update, skill, uninstall.
+MCP: optional .[mcp], python -m reachkit.mcp_server. Six tools expose status, capabilities, reading, search, research, collection.
+Platform login, browser bridge, configuration and external dependencies must be verified for the selected task.
+Upstream source and license: NOTICE, LICENSE. Local modifications: CHANGELOG.md, NOTICE.
